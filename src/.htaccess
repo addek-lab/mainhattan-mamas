@@ -1,0 +1,2 @@
+RewriteEngine On
+Redirect 301 /angebote.html /angebote_mamas.html

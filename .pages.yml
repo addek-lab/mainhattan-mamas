@@ -1,0 +1,146 @@
+# Pages CMS – Bearbeitungsoberfläche für die Texte der Website
+# Doku: https://pagescms.org/docs/configuration/
+# Gespeicherte Änderungen landen in content/*.json; die GitHub Action baut und veröffentlicht danach automatisch.
+
+components:
+  icon:
+    label: Symbol
+    type: select
+    options:
+      values:
+        - { name: baby, label: "Baby" }
+        - { name: users, label: "Personengruppe" }
+        - { name: heart-handshake, label: "Herz mit Händen" }
+        - { name: hand-heart, label: "Hand mit Herz" }
+        - { name: heart, label: "Herz" }
+        - { name: lightbulb, label: "Glühbirne (Idee)" }
+        - { name: gift, label: "Geschenk" }
+        - { name: shield, label: "Schild" }
+        - { name: shield-check, label: "Schild mit Haken" }
+        - { name: message-circle, label: "Sprechblase" }
+        - { name: book-open, label: "Offenes Buch" }
+        - { name: book, label: "Buch" }
+        - { name: coffee, label: "Kaffeetasse" }
+        - { name: soup, label: "Suppe / Essen" }
+        - { name: apple, label: "Apfel" }
+        - { name: calendar, label: "Kalender" }
+        - { name: clock, label: "Uhr" }
+        - { name: map-pin, label: "Ort / Pin" }
+        - { name: home, label: "Haus" }
+        - { name: building, label: "Gebäude" }
+        - { name: church, label: "Kirche" }
+        - { name: stethoscope, label: "Stethoskop" }
+        - { name: party-popper, label: "Party / Fest" }
+        - { name: package, label: "Paket" }
+        - { name: piggy-bank, label: "Sparschwein" }
+        - { name: network, label: "Netzwerk" }
+        - { name: phone, label: "Telefon" }
+        - { name: search, label: "Lupe" }
+        - { name: file-text, label: "Dokument" }
+
+content:
+  - name: startseite
+    label: Startseite
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: hero
+        label: Begrüßung (oberer Bereich mit Bild)
+        type: object
+        fields:
+          - { name: titel_zeile1, label: "Überschrift – Zeile 1", type: string, required: true }
+          - { name: titel_zeile2, label: "Überschrift – Zeile 2 (dunkelgrün)", type: string, required: true }
+          - { name: untertitel, label: "Unterzeile (kursiv)", type: string }
+          - { name: text, label: "Einleitungstext", type: text }
+          - { name: button_text, label: "Button-Text (führt zu: Angebote für Mamas)", type: string }
+
+      - name: dorf
+        label: "Abschnitt: Das Dorf in der Weltstadt"
+        type: object
+        fields:
+          - { name: titel, label: "Überschrift", type: string, required: true }
+          - { name: leitsatz, label: "Leitsatz (kursiv, rosa)", type: string }
+          - { name: text, label: "Text", type: text, description: "Eine Leerzeile beginnt einen neuen Absatz." }
+          - { name: hervorgehoben, label: "Hervorgehobener Satz (fett)", type: text }
+          - { name: button_text, label: "Button-Text (führt zu: Vision)", type: string }
+
+      - name: fuer_wen
+        label: "Abschnitt: Für wen wir da sind"
+        type: object
+        fields:
+          - { name: titel, label: "Überschrift", type: string, required: true }
+          - name: karten
+            label: Karten
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{titel}"
+            fields:
+              - { name: icon, label: "Symbol", component: icon }
+              - { name: titel, label: "Titel", type: string, required: true }
+              - { name: text, label: "Text", type: text }
+
+      - name: was_passiert
+        label: "Abschnitt: Was bei uns passiert"
+        type: object
+        fields:
+          - { name: titel, label: "Überschrift", type: string, required: true }
+          - name: punkte
+            label: Punkte
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{titel}"
+            fields:
+              - { name: icon, label: "Symbol", component: icon }
+              - { name: titel, label: "Titel", type: string, required: true }
+              - { name: text, label: "Text", type: text }
+
+      - name: drei_wege
+        label: "Abschnitt: Drei Wege, Teil der Community zu werden"
+        type: object
+        fields:
+          - { name: titel, label: "Überschrift", type: string, required: true }
+          - name: schritte
+            label: Schritte (werden automatisch nummeriert)
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{titel}"
+            fields:
+              - { name: titel, label: "Titel", type: string, required: true }
+              - { name: text, label: "Text", type: text }
+              - { name: button_text, label: "Button-Text", type: string }
+              - name: link
+                label: Button führt zu
+                type: select
+                options:
+                  values:
+                    - { name: angebote_mamas.html, label: "Angebote für Mamas & Familien" }
+                    - { name: angebote_einrichtungen.html, label: "Angebote für Einrichtungen" }
+                    - { name: mitmachen.html, label: "Mitmachen" }
+                    - { name: vision.html, label: "Vision" }
+                    - { name: projekte.html, label: "Projekte" }
+                    - { name: unterstuetzen.html, label: "Unterstützen" }
+                    - { name: kontakt.html, label: "Kontakt" }
+
+      - name: ideen
+        label: "Abschnitt: Ideen, die wir anpacken"
+        type: object
+        fields:
+          - { name: titel, label: "Überschrift", type: string, required: true }
+          - { name: text, label: "Text", type: text, description: "Eine Leerzeile beginnt einen neuen Absatz." }
+          - { name: button_text, label: "Button-Text (führt zu: Projekte)", type: string }
+
+      - name: abschluss
+        label: "Abschnitt: Abschluss (Frankfurt wird durch Menschen stark)"
+        type: object
+        fields:
+          - { name: titel, label: "Überschrift", type: string, required: true }
+          - { name: leitsatz, label: "Leitsatz (kursiv, rosa)", type: string }
+          - { name: text, label: "Text", type: text, description: "Eine Leerzeile beginnt einen neuen Absatz." }
+          - { name: button_text, label: "Button-Text (führt zu: Kontakt)", type: string }

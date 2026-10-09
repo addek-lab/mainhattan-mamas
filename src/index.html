@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mainhattan Mamas | Von Mama zu Mama in Frankfurt</title>
+    <meta name="description" content="Mainhattan Mamas ist die Community für Mütter und Familien in Frankfurt. Wir bringen das Dorf in die Weltstadt.">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mainhattan-mamas.de/">
+    <meta property="og:title" content="Mainhattan Mamas | Von Mama zu Mama in Frankfurt">
+    <meta property="og:description" content="Mainhattan Mamas ist die Community für Mütter und Familien in Frankfurt. Wir bringen das Dorf in die Weltstadt.">
+    <meta property="og:image" content="https://mainhattan-mamas.de/startbild.jpg">
+    
+    <!-- @include head -->
+</head>
+<body>
+    <!-- @include header -->
+
+    <main>
+        {#- Texte kommen aus content/home.json (bearbeitbar in Pages CMS) -#}
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="startbild.jpg" alt="Zwei Frauen tauschen sich freundschaftlich bei einem Spaziergang aus, ein Baby ist in der Trage dabei">
+            </div>
+            <div class="hero-content">
+                <div class="hero-text-box">
+                    <h1 class="hero-title">{{ hero.titel_zeile1 }}<br><span style="color: var(--color-primary)">{{ hero.titel_zeile2 }}</span></h1>
+                    <p class="hero-subtitle">{{ hero.untertitel }}</p>
+                    <p style="margin-bottom: 2rem; font-size: 1.125rem;">{{ hero.text }}</p>
+                    <a href="angebote_mamas.html" class="btn btn-accent">{{ hero.button_text }}</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Das Dorf in der Weltstadt -->
+        <section class="section">
+            <div class="container container--narrow text-center">
+                <h2 class="section-title">{{ dorf.titel }}</h2>
+                <p class="lead">{{ dorf.leitsatz }}</p>
+                {{ dorf.text | absaetze }}
+                <p class="text-strong">{{ dorf.hervorgehoben }}</p>
+                <a href="vision.html" class="btn btn-primary btn--spaced">{{ dorf.button_text }}</a>
+            </div>
+        </section>
+
+        <!-- Für wen wir da sind -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">{{ fuer_wen.titel }}</h2>
+                </div>
+
+                <div class="grid grid--auto-3 audience-grid">
+                    {%- for karte in fuer_wen.karten %}
+                    <div class="card">
+                        <div class="card-icon"><i data-lucide="{{ karte.icon }}"></i></div>
+                        <h3 class="card-title">{{ karte.titel }}</h3>
+                        <p>{{ karte.text }}</p>
+                    </div>
+                    {%- endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Was bei uns passiert -->
+        <section class="section section--surface">
+            <div class="container split-layout align-center">
+                <div class="split-image-container">
+                    <img src="illu_gespraech.jpg" alt="Frauen tauschen sich in einem modernen Café aus" class="rounded-image">
+                </div>
+                <div class="split-content">
+                    <h2 class="section-title">{{ was_passiert.titel }}</h2>
+
+                    <div class="feature-rows">
+                        {%- for punkt in was_passiert.punkte %}
+                        <div class="feature-row">
+                            <i data-lucide="{{ punkt.icon }}"></i>
+                            <div>
+                                <h3>{{ punkt.titel }}</h3>
+                                <p>{{ punkt.text }}</p>
+                            </div>
+                        </div>
+                        {%- endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Drei Wege Teil der Community zu werden -->
+        <section class="section">
+            <div class="container text-center">
+                <h2 class="section-title">{{ drei_wege.titel }}</h2>
+                <div class="grid grid--auto-3 section-grid">
+                    {%- for schritt in drei_wege.schritte %}
+                    <div class="card step-card">
+                        <div class="step-number">{{ loop.index }}</div>
+                        <h3 class="card-title">{{ schritt.titel }}</h3>
+                        <p>{{ schritt.text }}</p>
+                        <a href="{{ schritt.link }}" class="btn btn-outline">{{ schritt.button_text }}</a>
+                    </div>
+                    {%- endfor %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Ideen die wir anpacken -->
+        <section class="section">
+            <div class="container split-layout align-center reverse-mobile">
+                <div class="split-content">
+                    <h2 class="section-title">{{ ideen.titel }}</h2>
+                    {{ ideen.text | absaetze }}
+                    <a href="projekte.html" class="btn btn-primary">{{ ideen.button_text }}</a>
+                </div>
+                <div class="split-image-container">
+                    <img src="illu_kurse.jpg" alt="Frauen bei einem gemeinsamen Projekt" class="rounded-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing CTA -->
+        <section class="section">
+            <div class="container container--narrow text-center">
+                <h2 class="section-title">{{ abschluss.titel }}</h2>
+                <p class="lead">{{ abschluss.leitsatz }}</p>
+                {{ abschluss.text | absaetze }}
+                <a href="kontakt.html" class="btn btn-accent btn--spaced">{{ abschluss.button_text }}</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- @include footer -->
+</body>
+</html>

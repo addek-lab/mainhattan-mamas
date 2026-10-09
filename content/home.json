@@ -1,0 +1,115 @@
+{
+  "hero": {
+    "titel_zeile1": "Deine Talente.",
+    "titel_zeile2": "Unser Netzwerk.",
+    "untertitel": "Willkommen bei den Mainhattan Mamas.",
+    "text": "Frankfurt ist groß, schnell und voller Leben. Mitten im Alltag zwischen Kita, Terminen und Babychaos stellen wir uns dieselben Fragen – und wir haben keine Lust, alles allein zu wuppen. Mainhattan Mamas ist die Community, die deine Lebenswelt versteht: Wir tun uns zusammen, teilen Erfahrungen, packen gegenseitig mit an und holen das Dorf mitten in die Mainmetropole.",
+    "button_text": "Komm vorbei: Termine & Treffen"
+  },
+  "dorf": {
+    "titel": "Das Dorf in der Weltstadt",
+    "leitsatz": "Ein Kind großzuziehen braucht ein ganzes Dorf – nur hat Frankfurt selten eines parat.",
+    "text": "Also bauen wir uns unsere eigene Community: direkt im Viertel, unkompliziert und auf Augenhöhe. Von der Schwangerschaft über das chaotische Wochenbett und die ersten Babyjahre bis weit in die Schulzeit hinein. Hier wird aus einer Frage ein hilfreicher Kontakt, aus geteilter Erfahrung echte Entlastung und aus einer guten Idee das nächste Format für viele.",
+    "hervorgehoben": "Du musst bei uns nichts beweisen und keine heile Welt vorspielen: Du kommst so, wie dein Tag gerade ist.",
+    "button_text": "Mehr über unsere Vision erfahren"
+  },
+  "fuer_wen": {
+    "titel": "Für wen wir da sind",
+    "karten": [
+      {
+        "icon": "baby",
+        "titel": "Schwangere & Mamas im ersten Babyjahr",
+        "text": "Für ehrliche Fragen, verlässliche Kontakte und jemanden, der dich im Wochenbett ganz praktisch unterstützt."
+      },
+      {
+        "icon": "users",
+        "titel": "Mütter mit älteren Kindern",
+        "text": "Wenn Kita, Schule und Job laufen, aber ein starkes Netzwerk im Viertel fehlt, das einem den Rücken stärkt."
+      },
+      {
+        "icon": "heart-handshake",
+        "titel": "Erfahrene Frauen & ältere Generationen",
+        "text": "Ob deine Kinder längst erwachsen sind oder du keine Kinder hast: Frauen, die Zeit, Ruhe und Lebenserfahrung teilen möchten – als Patin, Wahl-Oma oder Nachbarin."
+      },
+      {
+        "icon": "lightbulb",
+        "titel": "Mütter mit Wissen & Talenten",
+        "text": "Du bringst berufliche Expertise oder Lebenserfahrung mit (von Pädagogik und Gesundheit über Recht und Finanzen bis zum Wiedereinstieg) und möchtest dein Wissen weitergeben."
+      },
+      {
+        "icon": "gift",
+        "titel": "Frauen, die unterstützen wollen",
+        "text": "Einen Kuchen vor die Tür stellen, ein Treffen leiten oder bei Aktionen mithelfen."
+      },
+      {
+        "icon": "shield",
+        "titel": "Familien mit Allergien",
+        "text": "Wo Kinder mit schweren Allergien sicher dazugehören und Eltern nicht ständig kämpfen und erklären müssen."
+      }
+    ]
+  },
+  "was_passiert": {
+    "titel": "Was bei uns passiert",
+    "punkte": [
+      {
+        "icon": "message-circle",
+        "titel": "Echter Support statt Google-Marathon",
+        "text": "Kurze Wege, ehrliche Erfahrungen und praktische Hilfe im Frankfurter Alltag."
+      },
+      {
+        "icon": "hand-heart",
+        "titel": "Hilfe, die ankommt",
+        "text": "Eine warme Mahlzeit im Wochenbett, eine Runde durch die Wohnung saugen oder einfach ein offenes Ohr im richtigen Moment."
+      },
+      {
+        "icon": "book-open",
+        "titel": "Wissen auf Augenhöhe",
+        "text": "Workshops, Fachimpulse und Treffen von Frauen aus der Region – ohne Belehrung von oben."
+      },
+      {
+        "icon": "coffee",
+        "titel": "Kein Perfektionsdruck",
+        "text": "Kein Schicki-Micki, kein Vergleichen, kein Funktionieren-Müssen."
+      },
+      {
+        "icon": "shield-check",
+        "titel": "Sicherer Genuss",
+        "text": "Treffen und Aktionen mit klaren Zutaten, bei denen kein Kind wegen einer Allergie am Rand stehen bleiben muss."
+      }
+    ]
+  },
+  "drei_wege": {
+    "titel": "Drei Wege, Teil der Community zu werden",
+    "schritte": [
+      {
+        "titel": "Dazukommen",
+        "text": "Lerne andere Frauen kennen, hol dir Rat für deinen Alltag und finde Anschluss im Viertel. Ohne Pflichtprogramm, ohne monatelange Voranmeldung.",
+        "button_text": "Treffen & Angebote ansehen",
+        "link": "angebote_mamas.html"
+      },
+      {
+        "titel": "Mitgestalten",
+        "text": "Bringe dein Können ein: Werde Wochenbett-Patin, hilf bei Treffen oder leite einen eigenen Workshop zu deinem Fachgebiet.",
+        "button_text": "Mitmachen & Patin werden",
+        "link": "mitmachen.html"
+      },
+      {
+        "titel": "Möglich machen",
+        "text": "Du hast einen geeigneten Raum, leitest eine Kita oder möchtest als Partner oder Förderin unsere Arbeit unterstützen? Lass uns gemeinsam Frankfurt vernetzen.",
+        "button_text": "Partner werden & unterstützen",
+        "link": "unterstuetzen.html"
+      }
+    ]
+  },
+  "ideen": {
+    "titel": "Ideen, die wir anpacken",
+    "text": "Manche Vorhaben brauchen mehr als ein einzelnes Treffen. Wir entwickeln gezielte Projekte – etwa für sichere Begegnungen und kindgerechte Aufklärung bei schweren Nahrungsmittelallergien oder für neue Formen nachbarschaftlicher Entlastung.\n\nDamit aus diesen Konzepten feste Angebote in Frankfurt werden, suchen wir passende Räume, Partnerinnen und Förderer.",
+    "button_text": "Unsere Projektideen entdecken"
+  },
+  "abschluss": {
+    "titel": "Frankfurt wird durch Menschen stark.",
+    "leitsatz": "Mainhattan Mamas ist keine fertige Bühne und kein starres Programm von oben.",
+    "text": "Es ist unsere Einladung an dich, Teil von etwas zu sein, das den Alltag hier spürbar leichter und wärmer macht. Was du suchst, was du kannst oder was du anstoßen möchtest: Schreib uns zwei Zeilen. Wir freuen uns auf dich.",
+    "button_text": "Sag Hallo: Kontakt aufnehmen"
+  }
+}

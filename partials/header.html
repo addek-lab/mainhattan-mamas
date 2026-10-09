@@ -1,0 +1,52 @@
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo-link">
+                <img src="mainhattan_mamas_logo.svg" alt="Mainhattan Mamas Logo" class="logo-img" width="103" height="100">
+            </a>
+            <nav class="nav" id="main-nav" aria-label="Hauptnavigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" aria-haspopup="true">Angebote <i data-lucide="chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="angebote_mamas.html">Für Mamas & Familien</a>
+                        <a href="angebote_einrichtungen.html">Für Einrichtungen & Partner</a>
+                    </div>
+                </div>
+                <a href="mitmachen.html" class="nav-link">Mitmachen</a>
+                <div class="nav-dropdown">
+                    <a href="#" class="nav-link" aria-haspopup="true">Über uns <i data-lucide="chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="vision.html">Vision</a>
+                        <a href="projekte.html">Projekte</a>
+                    </div>
+                </div>
+                <a href="unterstuetzen.html" class="nav-link">Unterstützen</a>
+                <a href="kontakt.html" class="btn btn-accent">Kontakt</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-overlay">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="nav-overlay">
+        <a href="index.html" class="nav-link">Home</a>
+
+        <a href="#" class="nav-link accordion-toggle">Angebote <i data-lucide="chevron-down"></i></a>
+        <div class="accordion-content">
+            <a href="angebote_mamas.html" class="nav-link nav-link--sub">Für Mamas & Familien</a>
+            <a href="angebote_einrichtungen.html" class="nav-link nav-link--sub">Für Einrichtungen</a>
+        </div>
+
+        <a href="mitmachen.html" class="nav-link">Mitmachen</a>
+
+        <a href="#" class="nav-link accordion-toggle">Über uns <i data-lucide="chevron-down"></i></a>
+        <div class="accordion-content">
+            <a href="vision.html" class="nav-link nav-link--sub">Vision</a>
+            <a href="projekte.html" class="nav-link nav-link--sub">Projekte</a>
+        </div>
+
+        <a href="unterstuetzen.html" class="nav-link">Unterstützen</a>
+        <a href="kontakt.html" class="btn btn-accent">Kontakt</a>
+    </div>
