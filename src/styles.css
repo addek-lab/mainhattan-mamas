@@ -1585,6 +1585,10 @@ body.nav-open { overflow: hidden; }
 .tile { background: var(--color-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--color-border); }
 .tile > svg { color: var(--color-primary); margin-bottom: 0.5rem; }
 .tile p { font-size: 0.95rem; }
+.tile-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 768px) {
+    .tile-grid--3 { grid-template-columns: minmax(0, 1fr); }
+}
 @media (max-width: 480px) {
     .tile-grid { grid-template-columns: minmax(0, 1fr); }
     .tile { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 0.875rem; align-items: start; padding: 1.125rem 1.25rem; }
