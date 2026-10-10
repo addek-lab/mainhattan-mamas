@@ -188,7 +188,8 @@ if (form) {
     
     // Projekt vorauswählen, z. B. kontakt.html?projekt=kuchen
     const projektCheckboxen = {
-        kuchen: 'Projekt Kuchen für alle'
+        kuchen: 'Projekt Kuchen für alle',
+        lichterfest: 'Projekt Lichterfest der Generationen'
     };
     const projekt = urlParams.get('projekt');
     if (projekt && projektCheckboxen[projekt]) {
