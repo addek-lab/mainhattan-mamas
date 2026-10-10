@@ -594,6 +594,9 @@ a { color: var(--color-accent); }
     white-space: nowrap;
 }
 
+/* Mehrere Buttons nebeneinander (z. B. "fördern" + "Bescheid geben") */
+.btn-row { display: inline-grid; gap: 0.75rem; margin-top: 1rem; align-self: flex-start; }   /* untereinander, gleich breit */
+
 .btn-large {
     padding: 1.125rem 2.25rem;
     font-size: 1.05rem;
@@ -1465,6 +1468,7 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 480px) {
     .btn { white-space: normal; text-align: center; max-width: 100%; }
     .split-content > .btn { align-self: stretch; }
+    .btn-row { display: grid; align-self: stretch; }
     .section-head { margin-bottom: 1.75rem; }
     .audience-grid { gap: 1rem; }
     .audience-grid .card { padding: 1.5rem; }

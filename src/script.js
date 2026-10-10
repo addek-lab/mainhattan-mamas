@@ -186,6 +186,19 @@ if (form) {
         }
     }
     
+    // Projekt vorauswählen, z. B. kontakt.html?projekt=kuchen
+    const projektCheckboxen = {
+        kuchen: 'Projekt Kuchen für alle'
+    };
+    const projekt = urlParams.get('projekt');
+    if (projekt && projektCheckboxen[projekt]) {
+        const checkbox = form.querySelector(`input[type="checkbox"][value="${projektCheckboxen[projekt]}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+            setTimeout(() => checkbox.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+        }
+    }
+
     if (type) {
         let valueToCheck = '';
         if (type === 'spenden' || type === 'foerdern' || type === 'kooperation') {
