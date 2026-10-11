@@ -1,0 +1,8 @@
+{
+  "name": "mainhattan-mamas-tools",
+  "private": true,
+  "description": "Browser-Prüfwerkzeuge für die lokale/Live-Seite (sichtbares Chrome via DevTools-Protokoll)",
+  "dependencies": {
+    "playwright-core": "1.47.2"
+  }
+}

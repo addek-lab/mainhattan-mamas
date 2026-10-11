@@ -2,3 +2,5 @@ dist/
 .deploy.env
 .DS_Store
 .venv/
+tools/node_modules/
+tools/.chrome-profile/
