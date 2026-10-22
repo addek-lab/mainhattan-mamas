@@ -1614,6 +1614,8 @@ body.nav-open { overflow: hidden; }
 .embed-consent__title { font-family: var(--font-display); font-size: 1.5rem; }
 .embed-consent p { max-width: 560px; }
 .embed-consent__alt { font-size: 0.9rem; }
-.embed-frame { display: block; width: 100%; min-height: 800px; border: 0; }
+/* Höhe = Höhe des easyVerein-Antrags, damit man nicht im Rahmen scrollen muss */
+.embed-frame { display: block; width: 100%; height: 1420px; border: 0; }
+@media (max-width: 600px) { .embed-frame { height: 1720px; } }
 .embed-credit { margin-top: 0.75rem; text-align: center; opacity: 0.7; }
 .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
