@@ -1436,11 +1436,14 @@ body.nav-open { overflow: hidden; }
     .grid--4 { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
-    :root { --section-pad: var(--section-pad-mob); }
-
+/* Menü mit zwei Buttons passt erst ab 1025px in eine Zeile */
+@media (max-width: 1024px) {
     .hamburger { display: flex; }
     .nav { display: none; }
+}
+
+@media (max-width: 768px) {
+    :root { --section-pad: var(--section-pad-mob); }
 
     .page-hero { padding: 7.5rem 0 2.5rem; }
     .page-hero h1 { font-size: clamp(1.875rem, 7vw, 2.75rem); }
@@ -1594,3 +1597,23 @@ body.nav-open { overflow: hidden; }
     .tile { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 0.875rem; align-items: start; padding: 1.125rem 1.25rem; }
     .tile > svg { margin: 0; }
 }
+
+/* ── EINGEBETTETE FORMULARE (erst nach Klick laden) ──────── */
+.embed-consent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--color-surface);
+    border: 2px dashed var(--color-border);
+    border-radius: var(--radius-lg);
+}
+.embed-consent > svg { width: 40px; height: 40px; color: var(--color-accent); }
+.embed-consent__title { font-family: var(--font-display); font-size: 1.5rem; }
+.embed-consent p { max-width: 560px; }
+.embed-consent__alt { font-size: 0.9rem; }
+.embed-frame { display: block; width: 100%; min-height: 800px; border: 0; }
+.embed-credit { margin-top: 0.75rem; text-align: center; opacity: 0.7; }
+.btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }

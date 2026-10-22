@@ -126,7 +126,10 @@
                 <h2 class="section-title">{{ abschluss.titel }}</h2>
                 <p class="lead">{{ abschluss.leitsatz }}</p>
                 {{ abschluss.text | absaetze }}
-                <a href="kontakt.html" class="btn btn-accent btn--spaced">{{ abschluss.button_text }}</a>
+                <div class="btn-group btn--spaced">
+                    <a href="kontakt.html" class="btn btn-accent">{{ abschluss.button_text }}</a>
+                    <a href="mitglied_werden.html" class="btn btn-outline">{{ abschluss.mitglied_button_text }}</a>
+                </div>
             </div>
         </section>
     </main>

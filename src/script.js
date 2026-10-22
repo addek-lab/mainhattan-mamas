@@ -219,3 +219,17 @@ if (form) {
         }
     }
 }
+
+// Eingebettete Fremdinhalte (z. B. easyVerein-Mitgliedsantrag) erst nach Klick laden
+document.querySelectorAll('.embed-consent').forEach(box => {
+    const button = box.querySelector('.embed-consent__button');
+    if (!button) return;
+    button.addEventListener('click', () => {
+        const iframe = document.createElement('iframe');
+        iframe.src = box.dataset.embedSrc;
+        iframe.title = box.dataset.embedTitle || '';
+        iframe.className = 'embed-frame';
+        box.replaceWith(iframe);
+        iframe.focus();
+    });
+});
