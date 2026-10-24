@@ -1619,3 +1619,27 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 600px) { .embed-frame { height: 1720px; } }
 .embed-credit { margin-top: 0.75rem; text-align: center; opacity: 0.7; }
 .btn-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+
+/* ── FLYER ZUM TEILEN ────────────────────────────────────── */
+.flyer-card {
+    display: grid;
+    grid-template-columns: 140px minmax(0, 1fr);
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+.flyer-card__thumb { display: block; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 18px rgba(26, 51, 47, 0.12); transition: var(--transition); }
+.flyer-card__thumb:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(26, 51, 47, 0.18); }
+.flyer-card__thumb img { display: block; width: 100%; height: auto; }
+.flyer-card__title { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 0.25rem; }
+.flyer-card__body p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.flyer-card__actions { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.flyer-card__actions .btn { padding: 0.6rem 1.125rem; font-size: 0.9rem; }
+.flyer-card__actions .btn svg { width: 18px; height: 18px; }
+@media (max-width: 480px) {
+    .flyer-card { grid-template-columns: 110px minmax(0, 1fr); gap: 1rem; padding: 1rem; }
+}

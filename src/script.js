@@ -233,3 +233,29 @@ document.querySelectorAll('.embed-consent').forEach(box => {
         iframe.focus();
     });
 });
+
+// Flyer teilen: Handy -> Teilen-Menü mit PDF (z. B. WhatsApp), sonst Link teilen, sonst WhatsApp Web
+document.querySelectorAll('[data-share-file]').forEach(button => {
+    button.addEventListener('click', async () => {
+        const fileUrl = new URL(button.dataset.shareFile, location.href).href;
+        const title = button.dataset.shareTitle || document.title;
+        const text = button.dataset.shareText || '';
+        try {
+            if (navigator.canShare) {
+                const blob = await (await fetch(fileUrl)).blob();
+                const file = new File([blob], fileUrl.split('/').pop(), { type: 'application/pdf' });
+                if (navigator.canShare({ files: [file] })) {
+                    await navigator.share({ files: [file], title, text });
+                    return;
+                }
+            }
+            if (navigator.share) {
+                await navigator.share({ title, text, url: fileUrl });
+                return;
+            }
+        } catch (err) {
+            if (err.name === 'AbortError') return; // Teilen abgebrochen
+        }
+        window.open('https://wa.me/?text=' + encodeURIComponent(text + '\nFlyer: ' + fileUrl), '_blank', 'noopener');
+    });
+});
