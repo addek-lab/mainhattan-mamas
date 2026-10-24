@@ -259,3 +259,11 @@ document.querySelectorAll('[data-share-file]').forEach(button => {
         window.open('https://wa.me/?text=' + encodeURIComponent(text + '\nFlyer: ' + fileUrl), '_blank', 'noopener');
     });
 });
+
+// Link zum Formular auf derselben Seite: passendes Interesse gleich ankreuzen (data-interesse="<value>")
+document.querySelectorAll('a[data-interesse]').forEach(link => {
+    link.addEventListener('click', () => {
+        const checkbox = document.querySelector(`#contactForm input[type="checkbox"][value="${link.dataset.interesse}"]`);
+        if (checkbox) checkbox.checked = true;
+    });
+});
