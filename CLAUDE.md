@@ -27,7 +27,7 @@ Der Ordner darüber (`../`) ist der alte Stand (Tag `stand-2026-10-09`): nicht m
 5. Lokal committen. **Push zu GitHub und Upload zu Strato nur auf ausdrückliche Ansage.**
 
 ## Live-Upload (Strato)
-1. Sicherung des Servers: `public_html` per `sftp get -r` nach `../server-backup-<datum>/` (letzte: `../server-backup-2026-10-11`).
+1. Sicherung des Servers: `public_html` per `sftp get -r` nach `../server-backup-<datum>/` (letzte: `../server-backup-2026-10-24`).
 2. Hochladen: `echo j | ./deploy.sh` (baut ohne noindex, legt Ordner an, lädt alles aus `dist/` hoch). `./deploy.sh --dry-run` zeigt nur die Dateiliste.
 3. Prüfen: `node tools/check.js https://mainhattan-mamas.de`, Inhalte per curl, Honeypot-Test
    `curl -X POST -H 'Content-Type: application/json' -d '{"website":"bot"}' https://mainhattan-mamas.de/contact.php` → success ohne Mail.
@@ -42,4 +42,6 @@ Der Ordner darüber (`../`) ist der alte Stand (Tag `stand-2026-10-09`): nicht m
 - Kein Tracking, keine externen Ressourcen – sonst Datenschutzerklärung anpassen. Kein Cookie-Banner (nicht nötig).
 - Abstände über Klassen (`section--surface`, `section--intro`, `section-head`, `btn-row`, …) statt Inline-Styles; Projekte wechseln Hintergrund und Bildseite ab.
 - Kontaktformular-Vorauswahl per `kontakt.html?projekt=<schlüssel>` (Zuordnung `projektCheckboxen` in `script.js`).
+- Mitgliedsantrag (`mitglied_werden.html`): easyVerein-Formular lädt erst nach Klick (`.embed-consent`), damit ohne Cookie-Banner keine Verbindung zu Dritten entsteht. easyVerein erlaubt die Einbettung nur unter https – lokal (http) bleibt der Rahmen leer, auf Vorschau und live funktioniert er.
+- Herausgenommene Inhalte nach `archiv/` (mit Anleitung zum Wiederherstellen), nicht löschen.
 - Nach Arbeit in diesem Ordner keine Änderungen am alten Ordner `../` außer Backups.
