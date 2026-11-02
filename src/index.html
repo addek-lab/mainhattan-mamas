@@ -99,12 +99,14 @@
                         <div class="step-number">{{ loop.index }}</div>
                         <h3 class="card-title">{{ schritt.titel }}</h3>
                         <p>{{ schritt.text }}</p>
-                        {%- if schritt.spenden_link %}
-                        <p class="step-card__hinweis">Oder direkt <a href="{{ schritt.spenden_link }}" target="_blank" rel="noopener">online spenden</a></p>
-                        {%- endif %}
                         <a href="{{ schritt.link }}" class="btn btn-outline">{{ schritt.button_text }}</a>
                     </div>
                     {%- endfor %}
+                </div>
+                <div class="spenden-band">
+                    <img src="logo_wirwunder.svg" alt="WirWunder" class="wirwunder-logo" width="82" height="32">
+                    <p class="spenden-band__text"><strong>{{ spenden.titel }}</strong> {{ spenden.text }}</p>
+                    <a href="{{ spenden.link }}" target="_blank" rel="noopener" class="btn btn-accent"><i data-lucide="heart"></i> {{ spenden.button_text }}</a>
                 </div>
             </div>
         </section>

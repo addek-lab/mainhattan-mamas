@@ -97,8 +97,7 @@
         "titel": "Möglich machen",
         "text": "Du hast einen geeigneten Raum, leitest eine Kita oder möchtest als Partner oder Förderin unsere Arbeit unterstützen? Lass uns gemeinsam Frankfurt vernetzen.",
         "button_text": "Partner werden & unterstützen",
-        "link": "unterstuetzen.html",
-        "spenden_link": "https://www.betterplace.org/de/projects/188152?wirwunder=164"
+        "link": "unterstuetzen.html"
       }
     ]
   },
@@ -113,5 +112,11 @@
     "text": "Es ist unsere Einladung an dich, Teil von etwas zu sein, das den Alltag hier spürbar leichter und wärmer macht. Was du suchst, was du kannst oder was du anstoßen möchtest: Schreib uns zwei Zeilen. Wir freuen uns auf dich.",
     "button_text": "Sag Hallo: Kontakt aufnehmen",
     "mitglied_button_text": "Mitglied werden"
+  },
+  "spenden": {
+    "titel": "Direkt helfen?",
+    "text": "Spende online über WirWunder Frankfurt, die Spendenplattform der Frankfurter Sparkasse.",
+    "button_text": "Jetzt online spenden",
+    "link": "https://www.betterplace.org/de/projects/188152?wirwunder=164"
   }
 }

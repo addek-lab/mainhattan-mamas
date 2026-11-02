@@ -347,8 +347,6 @@ a { color: var(--color-accent); }
     padding: 2.5rem 2rem 2rem;
 }
 .step-card p { margin-bottom: 1.5rem; }
-.step-card p:has(+ .step-card__hinweis) { margin-bottom: 0.5rem; }
-.step-card .step-card__hinweis { font-size: 0.9rem; }
 .step-card .btn { margin-top: auto; width: 100%; }
 .step-number {
     width: 48px;
@@ -1295,6 +1293,18 @@ a { color: var(--color-accent); }
     .spenden-card { padding: 1.5rem !important; }
     .spendenkonto-box { padding: 1.25rem !important; }
     .spendenkonto-box .iban { font-size: 0.9rem !important; letter-spacing: 0 !important; white-space: normal; }
+}
+
+/* Online-Spenden über WirWunder: Logo weiß auf Rot wie im Original */
+.wirwunder-logo { box-sizing: content-box; flex: none; width: 82px; height: 32px; padding: 6px 10px; background: #f00; border-radius: 8px; }
+.spenden-hinweis { display: flex; align-items: center; gap: 1rem; margin: 1rem 0 1.5rem; }
+.spenden-hinweis p { margin: 0; font-size: 0.9rem; color: var(--color-text-muted); }
+.spenden-band { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 1.25rem 1.5rem; margin-top: 2rem; padding: 1.5rem 2rem; background: var(--color-surface); border: 2px solid var(--color-accent); border-radius: var(--radius-lg); text-align: left; }
+.spenden-band__text { flex: 1 1 280px; margin: 0; }
+@media (max-width: 480px) {
+    .spenden-band { padding: 1.5rem; text-align: center; }
+    .spenden-band .btn { width: 100%; }
+    .spenden-hinweis { flex-direction: column; align-items: flex-start; }
 }
 
 .footer .footer-bank__link { display: inline-block; margin-top: 0.75rem; color: #F0B4AF; font-size: 0.95rem; font-weight: 700; }
