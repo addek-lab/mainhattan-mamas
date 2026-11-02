@@ -1288,6 +1288,15 @@ a { color: var(--color-accent); }
     font-variant-numeric: tabular-nums;
 }
 
+/* IBAN passt auf dem Handy nur mit weniger Innenabstand in die Box */
+@media (max-width: 480px) {
+    .spenden-card { padding: 1.5rem !important; }
+    .spendenkonto-box { padding: 1.25rem !important; }
+    .spendenkonto-box .iban { font-size: 0.9rem !important; letter-spacing: 0 !important; white-space: normal; }
+}
+
+.footer .footer-bank__link { display: inline-block; margin-top: 0.75rem; color: #F0B4AF; font-size: 0.95rem; font-weight: 700; }
+
 .footer-easyverein { display: flex; align-items: center; gap: 0.75rem; font-size: 0.8rem; opacity: 0.7; }
 .footer-easyverein a { display: flex; align-items: center; opacity: 1; }
 .footer-easyverein img { height: 24px; width: auto; filter: brightness(0) invert(1); transition: filter 0.3s; }

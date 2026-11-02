@@ -30,8 +30,11 @@
                     <div class="card" style="background-color: var(--color-surface); border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(44, 74, 59, 0.05); padding: 2rem;">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
                             <div class="card-icon" style="margin-bottom: 0; background-color: rgba(198, 101, 72, 0.1);"><i data-lucide="heart" style="color: var(--color-accent);"></i></div>
-                            <h3 class="card-title" style="margin-bottom: 0; font-size: 1.25rem;">Spendenkonto</h3>
+                            <h3 class="card-title" style="margin-bottom: 0; font-size: 1.25rem;">Spenden</h3>
                         </div>
+                        <a href="https://www.betterplace.org/de/projects/188152?wirwunder=164" target="_blank" rel="noopener" class="btn btn-accent" style="width: 100%; justify-content: center;"><i data-lucide="heart"></i> Jetzt online spenden</a>
+                        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin: 0.75rem 0 1.5rem;">Über betterplace.org – die Spendenbescheinigung kommt direkt von dort. Aktuell sammeln wir 1.250 € für unser erstes Vereinsjahr.</p>
+                        <p style="font-weight: 600; margin-bottom: 0.5rem;">Oder per Überweisung:</p>
                         <p style="font-weight: 600; color: var(--color-primary); margin-bottom: 0.5rem;">Mainhattan Mamas e.V.</p>
                         <p class="iban" style="font-size: 1.1rem; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; color: var(--color-text); margin-bottom: 0.5rem;">IBAN: DE08 5005 0201 0200 8577 03</p>
                         <p class="iban" style="font-size: 1.1rem; font-variant-numeric: tabular-nums; letter-spacing: 0.02em; color: var(--color-text); margin-bottom: 1.5rem;">BIC: HELADEF1822</p>
@@ -160,7 +163,7 @@
                 </div>
                 
                 <div class="grid" style="gap: 2rem;">
-                    <div class="card" style="padding: 2.5rem; border: none;">
+                    <div class="card spenden-card" style="padding: 2.5rem; border: none;">
                         <h3 class="card-title">1. Spenden: Direkte Hilfe im Viertel möglich machen</h3>
                         <p>Mit einer Spende finanzieren Sie direkte Entlastung für Frankfurter Familien. Ihr Beitrag ermöglicht zum Beispiel:</p>
                         <ul class="feature-list" style="margin: 1rem 0;">
@@ -169,14 +172,15 @@
                             <li>Materialien, Raumkosten und kindgerechte Umsetzung unserer Inklusionsprojekte</li>
                             <li>Kostenfreie Teilnahme an Themenrunden, damit Zugehörigkeit nie am Geldbeutel scheitert</li>
                         </ul>
-                        <a href="kontakt.html?type=spenden" class="btn btn-primary" style="margin-top: 1rem;">Jetzt spenden</a>
+                        <a href="https://www.betterplace.org/de/projects/188152?wirwunder=164" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 1rem;"><i data-lucide="heart"></i> Jetzt online spenden</a>
+                        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-top: 0.75rem;">Unsere Online-Spendenaktion auf betterplace.org finanziert aktuell das erste Vereinsjahr: Versicherung, Vereinsverwaltung, Material und Informationen für Kliniken und Kitas.</p>
 
                         <!-- Spendenkonto prominent -->
-                        <div style="margin-top: 2rem; background: var(--color-bg); border: 2px solid var(--color-accent); border-radius: 16px; padding: 1.75rem 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem;">
+                        <div class="spendenkonto-box" style="margin-top: 2rem; background: var(--color-bg); border: 2px solid var(--color-accent); border-radius: 16px; padding: 1.75rem 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.5rem;">
                             <div style="display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; background: rgba(198, 101, 72, 0.12); border-radius: 50%; flex-shrink: 0;">
                                 <i data-lucide="piggy-bank" style="color: var(--color-accent); width: 26px; height: 26px;"></i>
                             </div>
-                            <div style="flex: 1; min-width: 240px;">
+                            <div style="flex: 1; min-width: min(240px, 100%);">
                                 <p style="font-weight: 700; font-size: 1rem; color: var(--color-accent); margin-bottom: 0.25rem; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.8rem;">Spendenkonto</p>
                                 <p style="font-weight: 700; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 0.35rem;">Mainhattan Mamas e.V.</p>
                                 <p class="iban" style="font-size: 1.05rem; font-variant-numeric: tabular-nums; color: var(--color-text); margin-bottom: 0.2rem; letter-spacing: 0.03em;">IBAN: DE08 5005 0201 0200 8577 03</p>
