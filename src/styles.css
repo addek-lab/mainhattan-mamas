@@ -347,6 +347,8 @@ a { color: var(--color-accent); }
     padding: 2.5rem 2rem 2rem;
 }
 .step-card p { margin-bottom: 1.5rem; }
+.step-card p:has(+ .step-card__hinweis) { margin-bottom: 0.5rem; }
+.step-card .step-card__hinweis { font-size: 0.9rem; }
 .step-card .btn { margin-top: auto; width: 100%; }
 .step-number {
     width: 48px;

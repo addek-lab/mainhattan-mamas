@@ -99,6 +99,9 @@
                         <div class="step-number">{{ loop.index }}</div>
                         <h3 class="card-title">{{ schritt.titel }}</h3>
                         <p>{{ schritt.text }}</p>
+                        {%- if schritt.spenden_link %}
+                        <p class="step-card__hinweis">Oder direkt <a href="{{ schritt.spenden_link }}" target="_blank" rel="noopener">online spenden</a></p>
+                        {%- endif %}
                         <a href="{{ schritt.link }}" class="btn btn-outline">{{ schritt.button_text }}</a>
                     </div>
                     {%- endfor %}
