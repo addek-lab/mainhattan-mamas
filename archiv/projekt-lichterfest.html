@@ -1,0 +1,57 @@
+<!--
+  ARCHIV: Projekt „Lichterfest der Generationen“ (archiviert am 05.11.2026)
+  Wird nicht gebaut und nicht veröffentlicht. Bild: archiv/lichterfest_2027.jpg
+
+  Wiederherstellen:
+  1. archiv/lichterfest_2027.jpg zurück nach src/ verschieben.
+  2. Abschnitt A in src/projekte.html wieder einfügen (zuletzt stand er direkt nach „Kuchen für alle“)
+     und die Hintergründe/Bildseiten der folgenden Projekte wieder abwechseln lassen
+     (section--surface + Bild links / ohne Klasse + reverse-mobile, Bild rechts).
+  3. Im Einleitungstext von src/projekte.html „drei Herzensprojekte“ wieder zu „vier Herzensprojekte“ machen.
+  4. In src/kontakt.html Checkbox B unter „Projekte in Planung“ nach „Von Kugel zu Kugel“ einfügen.
+  5. In src/script.js im Objekt projektCheckboxen die Zeile C ergänzen (für kontakt.html?projekt=lichterfest).
+-->
+
+<!-- A: Abschnitt auf der Seite Projekte -->
+        <!-- Projekt 2: Lichterfest -->
+        <section class="section">
+            <div class="container split-layout align-center reverse-mobile">
+                <div class="split-content">
+                    <span class="status-badge planning"><i data-lucide="calendar"></i> In Vorbereitung</span>
+                    <h2 class="section-title">Lichterfest der Generationen</h2>
+                    <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">Das Licht verbindet uns – über Generationen und Kulturen hinweg.</p>
+                    <p>Licht wärmt und schenkt Hoffnung. In fast jeder Kultur gibt es ein Fest, an dem Lichter angezündet werden – von Sankt Martin über Diwali bis Chanukka. Was uns dabei verbindet, ist größer als das, was uns unterscheidet.</p>
+                    <p>Beim Lichterfest der Generationen kommen im Dornbusch Kinder, Eltern, Großeltern und Nachbarn an einem gemütlichen Nachmittag zusammen: zum Basteln, Erzählen und gemeinsamen Leuchten.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check-circle-2"></i> <strong>Kreativstation:</strong> Groß und Klein basteln gemeinsam Laternen und bunte Lichtgläser – mit Vorlagen für Lichtmotive aus aller Welt, von der Diya-Lampe über die Ramadan-Laterne bis zum Lucia-Kranz.</li>
+                        <li><i data-lucide="check-circle-2"></i> <strong>Gesprächsecke:</strong> Bei Punsch, Tee und Gebäck erzählen Ältere und Jüngere, wie in ihrer Kindheit und Familie Lichterfeste gefeiert werden.</li>
+                        <li><i data-lucide="check-circle-2"></i> <strong>Generationen-Fotoecke:</strong> In einem leuchtenden Bilderrahmen stellen sich Großeltern, Eltern und Kinder für ein gemeinsames Erinnerungsfoto zusammen – ein Bild, mehrere Generationen.</li>
+                        <li><i data-lucide="check-circle-2"></i> <strong>Kleiner Lichterlauf:</strong> Zum Abschluss ziehen wir mit den selbstgebastelten Laternen eine kleine Runde durch den Stadtteil.</li>
+                    </ul>
+                    <ul class="detail-list">
+                        <li><i data-lucide="calendar"></i> <strong>Wann:</strong> Spätherbst / Winter (genaues Datum folgt in Kürze)</li>
+                        <li><i data-lucide="map-pin"></i> <strong>Wo:</strong> Frankfurt-Dornbusch</li>
+                        <li><i data-lucide="users"></i> <strong>Für wen:</strong> Kinder, Eltern, Großeltern und Nachbarn – jede Generation und jede Kultur ist willkommen</li>
+                        <li><i data-lucide="gift"></i> <strong>Teilnahme:</strong> Kostenfrei</li>
+                    </ul>
+                    <ul class="detail-list">
+                        <li><i data-lucide="search"></i> <strong>Dafür suchen wir:</strong> Eine kooperierende Institution im Stadtteil, die Raum und Außengelände zur Verfügung stellt, helfende Hände für Kreativstation und Gesprächsecke sowie Unterstützung für Bastelmaterial und Verpflegung.</li>
+                    </ul>
+                    <div class="btn-row">
+                        <a href="kontakt.html?projekt=lichterfest" class="btn btn-primary">„Lichterfest der Generationen“ fördern</a>
+                        <a href="kontakt.html?projekt=lichterfest" class="btn btn-outline">Beim Lichterfest mithelfen</a>
+                    </div>
+                </div>
+                <div class="split-image-container">
+                    <img src="lichterfest_2027.jpg" alt="Kinder, Eltern und Großeltern verschiedener Kulturen stehen im Kreis um leuchtende Lichtgläser" class="rounded-image">
+                </div>
+            </div>
+        </section>
+
+<!-- B: Checkbox im Kontaktformular (src/kontakt.html) -->
+                            <label><input type="checkbox" name="interests[]" value="Projekt Lichterfest der Generationen"> Projekt „Lichterfest der Generationen“ (Familien-Lichterfest im Dornbusch)</label>
+
+<!-- C: Eintrag in src/script.js (projektCheckboxen) -->
+<!--
+        lichterfest: 'Projekt Lichterfest der Generationen'
+-->
