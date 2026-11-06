@@ -1666,7 +1666,8 @@ body.nav-open { overflow: hidden; }
 }
 
 /* ── MITMACH-AUFRUF IN EINEM ANGEBOT ─────────────────────── */
-.text-highlight { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--color-primary); margin: 1.5rem 0; }
+.text-highlight { font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; color: var(--color-primary); margin: 1.5rem 0; text-wrap: balance; }
+.text-balance { text-wrap: balance; }
 .mitmach-card {
     display: flex;
     gap: 1rem;
