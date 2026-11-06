@@ -1684,3 +1684,28 @@ body.nav-open { overflow: hidden; }
 @media (max-width: 480px) {
     .mitmach-card { flex-direction: column; gap: 0.5rem; padding: 1.25rem; }
 }
+
+/* ── LANGER ANGEBOTSTEXT, GEGLIEDERT (z. B. Mama tankt auf) ─ */
+.longread { max-width: 800px; margin: 4rem auto 0; }
+.longread__head { font-size: clamp(1.4rem, 2.5vw, 1.75rem); margin: 3rem 0 1rem; }
+.info-panel { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 2.5rem; margin-top: 3rem; }
+.longread > .info-panel:first-child { margin-top: 0; }
+.info-panel > .longread__head:first-child { margin-top: 0; }
+.info-panel .detail-list { margin-bottom: 1.5rem; }
+.stat-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.stat { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 0.35rem; padding: 1.25rem 1rem; background: var(--color-bg); border-radius: var(--radius-md); }
+.stat__num { font-family: var(--font-display); font-size: 2.75rem; font-weight: 600; line-height: 1; color: var(--color-primary); }
+.stat__label { font-size: 0.9rem; line-height: 1.45; color: var(--color-text-muted); }
+.stat--accent { background: var(--color-accent); }
+.stat--accent .stat__num, .stat--accent .stat__label { color: #fff; }
+.longread .tile-grid { margin: 0 0 1.5rem; }
+.longread .tile > svg { color: var(--color-accent); }
+.tile__title { font-size: 1.1rem; margin-bottom: 0.25rem; }
+.longread .text-highlight { margin-top: 1.5rem; }
+@media (max-width: 600px) {
+    .longread { margin-top: 3rem; }
+    .info-panel { padding: 1.5rem 1.25rem; }
+    .stat-row { grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
+    .stat { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); align-items: center; text-align: left; padding: 0.875rem 1rem; }
+    .stat__num { font-size: 2.25rem; text-align: center; }
+}
