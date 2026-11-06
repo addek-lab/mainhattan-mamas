@@ -1710,3 +1710,6 @@ body.nav-open { overflow: hidden; }
     .stat { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); align-items: center; text-align: left; padding: 0.875rem 1rem; }
     .stat__num { font-size: 2.25rem; text-align: center; }
 }
+
+/* Wortgruppe mit Bindestrich nicht trennen */
+.nowrap { white-space: nowrap; }
