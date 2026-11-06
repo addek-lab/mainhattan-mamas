@@ -27,7 +27,7 @@ Der Ordner darüber (`../`) ist der alte Stand (Tag `stand-2026-10-09`): nicht m
 5. Lokal committen. **Push zu GitHub und Upload zu Strato nur auf ausdrückliche Ansage.**
 
 ## Live-Upload (Strato)
-1. Sicherung des Servers: `public_html` per `sftp get -r` nach `../server-backup-<datum>/` (letzte: `../server-backup-2026-11-05`).
+1. Sicherung des Servers: `public_html` per `sftp get -r` nach `../server-backup-<datum>/` (letzte: `../server-backup-2026-11-06`).
 2. Hochladen: `echo j | ./deploy.sh` (baut ohne noindex, legt Ordner an, lädt alles aus `dist/` hoch). `./deploy.sh --dry-run` zeigt nur die Dateiliste.
 3. Prüfen: `node tools/check.js https://mainhattan-mamas.de`, Inhalte per curl, Honeypot-Test
    `curl -X POST -H 'Content-Type: application/json' -d '{"website":"bot"}' https://mainhattan-mamas.de/contact.php` → success ohne Mail.
