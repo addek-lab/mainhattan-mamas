@@ -189,6 +189,7 @@ if (form) {
     // Projekt vorauswählen, z. B. kontakt.html?projekt=kuchen
     const projektCheckboxen = {
         kuchen: 'Pilotprojekt Kuchen für alle',
+        allergie: 'Projekt Allergie mutig verstehen',
         mamatanktauf: 'Mama tankt auf mitgestalten'
     };
     const projekt = urlParams.get('projekt');
