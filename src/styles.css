@@ -1787,3 +1787,15 @@ body.nav-open { overflow: hidden; }
 .checkbox-group .form-group--sub { margin: -0.25rem 0 0.5rem 1.75rem; }
 .checkbox-group .form-group--sub label { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.35rem; }
 @media (max-width: 600px) { .chip { font-size: 0.875rem; padding: 0.45rem 0.85rem; } }
+
+/* ── MOBILES MENÜ: lange Einträge mittig, ganze Liste scrollbar ─ */
+#nav-overlay { justify-content: flex-start; gap: 1.5rem; padding: 130px 1.25rem 2.5rem; }
+#nav-overlay > :first-child { margin-top: auto; }   /* mittig, solange alles passt … */
+#nav-overlay > :last-child { margin-bottom: auto; } /* … sonst von oben scrollbar statt abgeschnitten */
+#nav-overlay .nav-link { text-align: center; text-wrap: balance; max-width: 100%; }
+#nav-overlay .nav-link--sub { font-size: 1.3rem; line-height: 1.3; }
+.accordion-content { max-width: 100%; }
+@media (max-width: 374px) {
+    #nav-overlay .nav-link { font-size: 1.6rem; }
+    #nav-overlay .nav-link--sub { font-size: 1.15rem; }
+}
