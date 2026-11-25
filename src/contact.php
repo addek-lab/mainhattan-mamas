@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($input['email']) ? filter_var(trim($input["email"]), FILTER_SANITIZE_EMAIL) : '';
     $phone = isset($input['phone']) ? strip_tags(trim($input["phone"])) : '';
     $stadtteil = isset($input['stadtteil']) ? strip_tags(trim($input["stadtteil"])) : '';
+    $mama_gruppen = isset($input['mama_gruppen']) ? htmlspecialchars(strip_tags(trim($input["mama_gruppen"])), ENT_QUOTES, 'UTF-8') : '';
     $message = isset($input['message']) ? nl2br(strip_tags(trim($input["message"]))) : '';
     $form_type = isset($input['form_type']) ? strip_tags(trim($input["form_type"])) : 'allgemein';
     $time_commitment = isset($input['time_commitment']) ? strip_tags(trim($input["time_commitment"])) : '';
@@ -133,6 +134,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class='field'>
                     <div class='label'>Interessen / Themen</div>
                     <div class='value' style='line-height:1.8;'>$interest</div>
+                </div>";
+    }
+
+    if (!empty($mama_gruppen)) {
+        $email_html .= "
+                <div class='field'>
+                    <div class='label'>Mama-Gruppe(n)</div>
+                    <div class='value'>$mama_gruppen</div>
                 </div>";
     }
 

@@ -19,8 +19,34 @@
     <!-- @include header -->
 
     <main>
+        <!-- Mama-Gruppen (neu, ganz oben) -->
+        <section class="section section--intro-full section--surface mama-groups">
+            <div class="container text-center" style="max-width: 900px;">
+                <h2 class="section-title">Finde deine Mamas.</h2>
+                <p class="lead" style="max-width: 760px; margin: 0 auto;">Jede Lebensphase bringt eigene Fragen mit. Deshalb bauen wir in Frankfurt nach und nach Mama-Gruppen auf, in denen sich Mütter in ähnlichen Situationen gegenseitig stärken.</p>
+                <ul class="chip-list" aria-label="Mama-Gruppen">
+                    <li class="chip">Schwangere</li>
+                    <li class="chip">Frisch gebackene Mamas</li>
+                    <li class="chip">Mamas im ersten Lebensjahr</li>
+                    <li class="chip">Mamas in langer Elternzeit</li>
+                    <li class="chip">Mamas von Kita-Kindern</li>
+                    <li class="chip">Mamas im Wiedereinstieg</li>
+                    <li class="chip">Mamas von Grundschulkindern</li>
+                    <li class="chip">Mamas von Jugendlichen</li>
+                    <li class="chip">Mamas mit erwachsenen Kindern</li>
+                    <li class="chip">Alleinerziehende Mamas</li>
+                    <li class="chip">Mamas von Kindern mit Allergien oder Unverträglichkeiten</li>
+                    <li class="chip">Mamas von Kindern mit besonderen Bedürfnissen</li>
+                    <li class="chip">Zwillings- und Mehrlingsmamas</li>
+                    <li class="chip">Neu in Frankfurt</li>
+                    <li class="chip">Patchwork- und Bonus-Mamas</li>
+                </ul>
+                <p style="max-width: 760px; margin: 0 auto;">Du findest dich wieder? Dann sag uns im <a href="#mitmachen-formular">Formular unten</a>, zu welcher Gruppe du gehörst. Wir melden uns, sobald es passende Treffen gibt.</p>
+            </div>
+        </section>
+
         <!-- Hero Section -->
-        <section class="section section--intro">
+        <section class="section section--intro section--after-groups">
             <div class="container text-center">
                 <h1 class="section-title">Zeit schenken. Wissen teilen. Gemeinsam etwas bewegen.</h1>
                 <p class="lead" style="max-width: 800px; margin: 0 auto;">Mainhattan Mamas lebt von Frauen, die sich auf ihre Weise einbringen möchten: mit einer kleinen Geste von Tür zu Tür, mit helfenden Händen bei Treffen oder mit wertvollem Know-how aus Beruf und Alltag.</p>
@@ -35,7 +61,7 @@
                 <h2 class="section-title">Dein Plus als Teil unserer Crew</h2>
                 <p class="lead">Mitmachen heißt bei uns nicht: noch ein stressiger Termin im Kalender.</p>
                 <p>Es bedeutet, Teil einer starken Gemeinschaft zu sein, die sich gegenseitig den Rücken stärkt. Als Teil unseres Netzwerks bist du mittendrin: Du knüpfst echte Kontakte zu Frauen im Viertel, tauschst dich bei exklusiven Crew-Treffen aus und gestaltest Formate mit, die Frankfurt menschlicher machen.</p>
-                <p>Du möchtest uns dauerhaft den Rücken stärken? Dann werde Mitglied im Verein.</p>
+                <p>Du möchtest uns dauerhaft den Rücken stärken? Dann werde Mitglied im Verein – für 24&nbsp;€ im Jahr.</p>
                 <a href="mitglied_werden.html" class="btn btn-outline btn--spaced">Mitglied werden</a>
             </div>
         </section>
@@ -194,6 +220,11 @@
                             <div class="form-group" style="margin-top: 1.5rem;">
                                 <label class="checkbox-group-label">Worauf hast du Lust? (Mehrfachauswahl möglich)</label>
                                 <div class="checkbox-group">
+                                    <label><input type="checkbox" name="interests[]" value="Mama-Gruppe zuordnen" id="chk-mamagruppe"> Ich möchte mich einer Mama-Gruppe zuordnen</label>
+                                    <div class="form-group form-group--sub">
+                                        <label for="mama_gruppen">Meine Gruppe(n):</label>
+                                        <input type="text" id="mama_gruppen" name="mama_gruppen" placeholder="z. B. Neu in Frankfurt">
+                                    </div>
                                     <label><input type="checkbox" name="interests[]" value="Wochenbett-Patin"> Wochenbett-Patin werden (Essen vorbeibringen, kleine Hilfen)</label>
                                     <label><input type="checkbox" name="interests[]" value="Treffen vor Ort"> Treffen & Spielzeiten vor Ort mitgestalten</label>
                                     <label><input type="checkbox" name="interests[]" value="Feste und Aktionen"> Bei Festen und einzelnen Aktionen mit anpacken</label>
