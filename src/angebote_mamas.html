@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angebote für Mamas & Familien | Mainhattan Mamas Frankfurt</title>
-    <meta name="description" content="Treffpunkte, Auszeiten und ehrlicher Austausch in Frankfurt. Vom Schwangeren-Treff bis zur Spielzeit.">
+    <meta name="description" content="Treffpunkte, Auszeiten und ehrlicher Austausch in Frankfurt. Minis im Stadtteil, Mama tankt auf, Schwangeren-Treff und Impuls-Vorträge.">
     
     <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mainhattan-mamas.de/angebote_mamas.html">
     <meta property="og:title" content="Angebote für Mamas & Familien | Mainhattan Mamas">
-    <meta property="og:description" content="Treffpunkte, Auszeiten und ehrlicher Austausch in Frankfurt. Vom Schwangeren-Treff bis zur Spielzeit.">
+    <meta property="og:description" content="Treffpunkte, Auszeiten und ehrlicher Austausch in Frankfurt. Minis im Stadtteil, Mama tankt auf, Schwangeren-Treff und Impuls-Vorträge.">
     <meta property="og:image" content="https://mainhattan-mamas.de/illu_brunch.jpg">
     
+    <script>
+        // Alte Sprungmarken (z. B. angebote_mamas.html#mama-tankt-auf) auf die neuen Unterseiten leiten
+        (function () {
+            var ziel = { '#mama-tankt-auf': 'mama_tankt_auf.html', '#minis': 'minis_im_stadtteil.html', '#schwangere': 'fuer_schwangere.html', '#krippe': 'impuls_vortraege.html' }[location.hash];
+            if (ziel) location.replace(ziel);
+        })();
+    </script>
     <!-- @include head -->
 </head>
 <body>
@@ -29,226 +36,37 @@
             </div>
         </section>
 
-        <!-- Format 1: Minis im Stadtteil -->
-        <section class="section section--surface">
-            <div class="container split-layout align-center">
-                <div class="split-image-container">
-                    <img src="illu_u3_minis.jpg" alt="Illustration Minis im Stadtteil" class="rounded-image" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                </div>
-                <div class="split-content">
-                    <span class="status-badge live" style="background-color: var(--color-success); color: white; margin-bottom: 1rem; display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;"><i data-lucide="check-circle-2"></i> Start: 12. November</span>
-                    <h2 class="section-title">Minis im Stadtteil</h2>
-                    <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">offenes Spiel für Kinder unter 3 Jahren</p>
-                    <p>Ein Ort zum Ankommen, Spielen und Kontakte knüpfen: Bei den „Minis im Stadtteil“ sind alle Kinder unter 3 Jahren gemeinsam mit ihren vertrauten Bezugspersonen herzlich willkommen. Ob Mama, Papa, Großeltern, Tagespflegefamilie oder andere Betreuungspersonen – wir freuen uns auf euch!</p>
-                    <p>Im geschützten und kindgerecht gestalteten Rahmen dürfen die Kleinsten frei entdecken, spielen und erste Kontakte zu anderen Kindern sammeln. Offenes Spiel bedeutet dabei: Kinder folgen ihren eigenen Interessen, ihrem Tempo und ihrer Neugier. Erwachsene begleiten aufmerksam, geben Sicherheit und können gleichzeitig erleben, was die Kinder gerade bewegt.</p>
-                    <p>Während die Minis spielen, entsteht für die Großen Raum für Austausch, neue Begegnungen und gegenseitige Unterstützung. Ohne Leistungsdruck, ohne festes Programm – dafür mit Zeit, Offenheit und Gemeinschaft im Stadtteil.</p>
-                    
-                    <ul class="detail-list">
-                        <li><i data-lucide="users"></i> <strong>Für wen:</strong> Kinder unter 3 Jahren mit Bezugspersonen</li>
-                        <li><i data-lucide="check-circle-2"></i> <strong>Konditionen:</strong> Ohne Anmeldung & kostenlos</li>
-                        <li><i data-lucide="calendar"></i> <strong>Wann:</strong> Donnerstags, 10:00 – 11:30 Uhr</li>
-                        <li><i data-lucide="party-popper"></i> <strong>Start:</strong> Los geht’s am Donnerstag, 12.&nbsp;November&nbsp;2026</li>
-                        <li><i data-lucide="calendar-days"></i> <strong>Termine 2026:</strong> 12.11., 19.11., 03.12., 10.12. und&nbsp;17.12.</li>
-                        <li>
-                            <i data-lucide="map-pin"></i>
-                            <div>
-                                <strong>Ort:</strong> Evangelische Dornbuschgemeinde<br>
-                                Carl-Goerdeler-Strasse 1, 60320 Frankfurt<br>
-                                im Gemeinderaum 2
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    <p style="font-weight: 600;">Kommt vorbei, lernt andere Familien und Betreuungspersonen kennen und gestaltet mit uns einen lebendigen Treffpunkt für die Kleinsten im Stadtteil!</p>
-
-                    <div class="flyer-card">
-                        <a href="flyer_minis_dornbusch.pdf" target="_blank" rel="noopener" class="flyer-card__thumb" aria-label="Flyer als PDF öffnen">
-                            <img src="flyer_minis_dornbusch.jpg" alt="Flyer „Die Minis im Stadtteil – Dornbuschgemeinde“">
-                        </a>
-                        <div class="flyer-card__body">
-                            <h3 class="flyer-card__title">Flyer zum Weitergeben</h3>
-                            <p>Kennst du Familien mit Kleinkindern? Teil den Flyer einfach – zum Beispiel per WhatsApp.</p>
-                            <div class="flyer-card__actions">
-                                <button type="button" class="btn btn-accent" data-share-file="flyer_minis_dornbusch.pdf" data-share-title="Minis im Stadtteil – Dornbuschgemeinde" data-share-text="Minis im Stadtteil: offenes Spiel für Kinder unter 3 Jahren, donnerstags 10:00–11:30 Uhr in der Ev. Dornbuschgemeinde. Ohne Anmeldung & kostenlos. Infos: https://mainhattan-mamas.de/angebote_mamas.html"><i data-lucide="share-2"></i> Flyer teilen</button>
-                                <a href="flyer_minis_dornbusch.pdf" download class="btn btn-outline"><i data-lucide="download"></i> Herunterladen</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="partner-card">
-                        <h3 class="partner-card__title">Kooperation und Förderung</h3>
-                        <p>Die Minis im Stadtteil werden unterstützt von:</p>
-                        <div class="partner-card__logos">
-                            <a href="https://www.dornbuschgemeinde.de" target="_blank" rel="noopener" class="partner-logo">
-                                <img src="logo_dornbuschgemeinde.png" alt="Evangelische Dornbuschgemeinde Frankfurt" width="333" height="86">
-                            </a>
-                            <a href="https://polytechnische.de" target="_blank" rel="noopener" class="partner-logo">
-                                <img src="logo_polytechnische_gesellschaft.svg" alt="Polytechnische Gesellschaft Frankfurt am Main" width="182" height="65">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Format 2: Mama tankt auf -->
-        <section class="section" id="mama-tankt-auf">
+        <!-- Übersicht: jedes Angebot hat seine eigene Unterseite -->
+        <section class="section section--flush-top">
             <div class="container">
-                <div class="split-layout align-center reverse-mobile">
-                    <div class="split-content">
-                        <span class="status-badge planning"><i data-lucide="clock"></i> In Planungsphase</span>
-                        <h2 class="section-title">Mama tankt auf</h2>
-                        <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Zeit für dich. Raum zum Durchatmen.</p>
-                        <p class="offer-meta">Ein präventives Gesundheits- und Entlastungsangebot für Mütter · <span class="nowrap">Pilotphase Februar bis Oktober 2027</span></p>
-                        <p>Muttersein ist wunderbar. Aber es ist auch intensiv. Zwischen Kindern, Beruf, Haushalt, Einkäufen, Terminen, Familienorganisation und all den kleinen und großen Dingen, die täglich erledigt werden müssen, bleibt für uns selbst oft wenig übrig.</p>
-                        <p>Selbstfürsorge ist in aller Munde. Wir wissen, wie wichtig es ist, auf uns zu achten, Pausen einzulegen und gut für uns zu sorgen. Aber seien wir ehrlich: Im Alltag ist das oft leichter gesagt als getan. Die Wäsche wartet, der Kühlschrank ist leer, die Kinder brauchen etwas und die nächste Aufgabe steht schon vor der Tür.</p>
-                        <p class="text-balance"><strong>Und so stellen wir uns selbst immer wieder&nbsp;zurück.</strong></p>
-                        <p class="text-highlight">Aber wann sind eigentlich wir einmal&nbsp;dran?</p>
-                    </div>
-                    <div class="split-image-container">
-                        <img src="illu_moments.jpg" alt="Illustration: Mütter entspannen gemeinsam bei Yoga und Meditation in einem gemütlichen Raum" class="rounded-image" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                    </div>
-                </div>
-
-                <div class="longread">
-                    <div class="info-panel">
-                        <h3 class="longread__head">Drei Stunden pro Woche – nur für dich</h3>
-                        <div class="stat-row">
-                            <div class="stat"><span class="stat__num">168</span><span class="stat__label">Stunden hat eine Woche</span></div>
-                            <div class="stat"><span class="stat__num">112</span><span class="stat__label">Stunden davon bist du wach – bei rund 8&nbsp;Stunden Schlaf pro Nacht</span></div>
-                            <div class="stat stat--accent"><span class="stat__num">3</span><span class="stat__label">Stunden ganz bewusst für dich – nicht einmal 3&nbsp;% deiner wachen Zeit</span></div>
-                        </div>
-                        <p>Drei Stunden, in denen wir nichts erledigen müssen. Niemandem etwas organisieren. Für niemanden funktionieren. <strong>Sondern einfach einmal nur für uns selbst da sein dürfen. Genau dafür gibt es „Mama tankt auf“.</strong></p>
-                    </div>
-
-                    <h3 class="longread__head">Warum das mehr ist als eine Pause</h3>
-                    <p>Dauerstress, wenig Schlaf und der ständige Mental Load gehen auf Dauer an die Gesundheit, an Körper und Seele. Oft merken wir erst, wie erschöpft wir sind, wenn gar nichts mehr geht.</p>
-                    <p>„Mama tankt auf“ setzt früher an. Regelmäßig auftanken, Wissen rund um die eigene Gesundheit mitnehmen und andere Mütter treffen: Das stärkt dich, bevor du an deine Grenzen kommst. Und ganz nebenbei erfährst du, wo du Unterstützung findest, falls du sie einmal brauchst.</p>
-                    <p><strong>Gut für dich zu sorgen ist kein Luxus. Es ist Gesundheitsvorsorge, für dich und deine ganze Familie.</strong></p>
-
-                    <h3 class="longread__head">Ein Sonntagvormittag nur für dich</h3>
-                    <p>Wir möchten einen festen Anker in deinem Alltag schaffen. Einen gemütlichen Ort, an dem du ankommen, loslassen und neue Kraft schöpfen kannst. Einen Sonntagvormittag nur für dich – ohne Verpflichtungen, ohne Erwartungen und ohne das Gefühl, schon wieder einen Programmpunkt abhaken zu müssen.</p>
-                    <p><strong>Hier darfst du einfach sein.</strong></p>
-
-                    <h3 class="longread__head">Alles kann, nichts muss</h3>
-                    <div class="tile-grid">
-                        <div class="tile"><i data-lucide="coffee"></i><div><h4 class="tile__title">Frühstück &amp; Austausch</h4><p>Ein gemeinsames Frühstück, eine Tasse Kaffee in Ruhe, ein nettes Gespräch mit anderen Müttern.</p></div></div>
-                        <div class="tile"><i data-lucide="flower-2"></i><div><h4 class="tile__title">Bewegung &amp; Entspannung</h4><p>Bei einer Yoga-, Atem- oder Entspannungseinheit mitmachen und durchatmen.</p></div></div>
-                        <div class="tile"><i data-lucide="lightbulb"></i><div><h4 class="tile__title">Impulse zum Monatsthema</h4><p>Jeden Monat ein Gesundheitsthema, zum Beispiel Schlaf, Frauengesundheit oder Mental Load. Anregungen mitnehmen und über das sprechen, was dich gerade bewegt.</p></div></div>
-                        <div class="tile"><i data-lucide="book-open"></i><div><h4 class="tile__title">Einfach mal Ruhe</h4><p>Im Ruheraum dein Buch weiterlesen, die Augen schließen oder ein kleines Nickerchen machen.</p></div></div>
-                        <div class="tile tile--wide"><i data-lucide="signpost"></i><div><h4 class="tile__title">Wegweiser</h4><p>Infos und Anlaufstellen zum Mitnehmen, ganz diskret, falls du einmal mehr Unterstützung brauchst.</p></div></div>
-                    </div>
-                    <p>Wir schaffen einen liebevollen Rahmen mit Kaffee, Tee und kleinen Leckereien, wohltuenden Angeboten, Raum für Austausch und vor allem ganz viel Freiheit. <strong>Du entscheidest selbst, wonach dir ist und was dir gerade guttut.</strong></p>
-
-                    <h3 class="longread__head">Jeden Sonntag, im Wechsel</h3>
-                    <p>Die Grundelemente gibt es an jedem Sonntag. Dazu kommt im wöchentlichen Wechsel eines von zwei Formaten:</p>
-                    <div class="tile-grid">
-                        <div class="tile"><i data-lucide="compass"></i><div><h4 class="tile__title">Mama-Kompass</h4><p>Jeden zweiten Sonntag ist unsere Fachberaterin da. Um 9 Uhr gibt sie einen kurzen Impuls zum Monatsthema. Ab 10 Uhr kannst du mit ihr ein vertrauliches Einzelgespräch führen, über deine Rolle als Mama, Selbstfürsorge, Mental Load oder Vereinbarkeit.</p><p>Der Mama-Kompass ist keine Therapie. Er ist ein offenes Ohr mit Fachwissen, das dir Orientierung gibt und, wenn du magst, Wege zu passender Unterstützung zeigt.</p><p>Vertraulich, freiwillig und kostenlos.</p></div></div>
-                        <div class="tile"><i data-lucide="sparkles"></i><div><h4 class="tile__title">Mamas teilen Talente</h4><p>An den anderen Sonntagen leitet eine Mama aus unserer Community von 9 bis 10 Uhr eine Einheit zum Monatsthema, zum Beispiel Yoga, eine Meditation, Atemübungen oder einen kurzen Vortrag aus ihrem Beruf. So wird aus dem Wissen einer Mama etwas, das allen guttut.</p></div></div>
-                    </div>
-
-                    <h3 class="longread__head">Unsere Monatsthemen 2027</h3>
-                    <p>Jeder Monat steht unter einem Thema rund um die Gesundheit von Frauen und Müttern. Ein roter Faden, kein Pflichtprogramm.</p>
-                    <table class="theme-table">
-                        <thead><tr><th scope="col">Monat</th><th scope="col">Thema</th></tr></thead>
-                        <tbody>
-                            <tr><td>Februar</td><td>Selbstfürsorge &amp; Schlaf</td></tr>
-                            <tr><td>März</td><td>Frauengesundheit</td></tr>
-                            <tr><td>April</td><td>Ernährung &amp; Energie</td></tr>
-                            <tr><td>Mai</td><td>Druck &amp; Perfektionismus</td></tr>
-                            <tr><td>Juni</td><td>Körper &amp; Geist</td></tr>
-                            <tr><td>Juli</td><td>Sommerpause</td></tr>
-                            <tr><td>August</td><td>Grenzen &amp; Mental Load</td></tr>
-                            <tr><td>September</td><td>Vereinbarkeit &amp; Wiedereinstieg</td></tr>
-                            <tr><td>Oktober</td><td>Hilfe finden, wenn es zu viel wird</td></tr>
-                        </tbody>
-                    </table>
-
-                    <h3 class="longread__head">Eine Auszeit nur für Mütter</h3>
-                    <p>„Mama tankt auf“ ist ein Angebot ausschließlich für Mütter – eine bewusste Auszeit ohne Kinder und ohne Alltagsverpflichtungen. Mal nichts müssen. Einfach sein.</p>
-                    <p>Wir glauben, dass Mütter nicht immer noch mehr leisten, lernen oder organisieren müssen. Manchmal brauchen sie einfach einen Ort, an dem sie selbst im Mittelpunkt stehen dürfen. Einen Ort zum Lachen, Reden, Schweigen, Ausruhen und Kraftschöpfen. Einen Ort, an dem man sich wohlfühlen kann, ohne etwas darstellen oder erreichen zu müssen.</p>
-                    <p>Denn wer immer für andere da ist, darf auch für sich selbst da sein.</p>
-                    <p class="text-highlight">Drei Stunden für dich. Du hast sie dir&nbsp;verdient.</p>
-
-                    <div class="info-panel">
-                        <h3 class="longread__head">Auf einen Blick</h3>
-                        <ul class="detail-list">
-                            <li><i data-lucide="info"></i> <strong>Was:</strong> Ein präventives Gesundheits- und Entlastungsangebot für Mütter</li>
-                            <li><i data-lucide="users"></i> <strong>Für wen:</strong> Ausschließlich für Mütter, eine Auszeit ohne Kinder</li>
-                            <li><i data-lucide="clock"></i> <strong>Wann:</strong> Jeden Sonntag, 9:00 – 12:00 Uhr (außer in den hessischen Schulferien und an Feiertagen)</li>
-                            <li><i data-lucide="calendar-range"></i> <strong>Pilotphase:</strong> 14. Februar bis 31. Oktober 2027, Auftakt am Valentinstag</li>
-                            <li><i data-lucide="repeat"></i> <strong>Im Wechsel:</strong> Mama-Kompass und Mamas teilen Talente</li>
-                            <li><i data-lucide="gift"></i> <strong>Teilnahme:</strong> Kostenlos, auch ohne Mitgliedschaft</li>
-                            <li><i data-lucide="map-pin"></i> <strong>Ort:</strong> Frankfurt, wird rechtzeitig bekannt gegeben</li>
-                        </ul>
-                        <a href="#informieren" class="btn btn-primary" data-interesse="Mama tankt auf">Gib mir Bescheid, wenn’s losgeht</a>
-                    </div>
-
-                    <div class="mitmach-card">
-                        <i data-lucide="sun"></i>
-                        <div>
-                            <h3 class="mitmach-card__title">Mamas teilen Talente: Gestalte einen Sonntag mit</h3>
-                            <p>Für „Mama tankt auf“ suchen wir Mamas jeden Alters, die ihr Wissen und Können teilen möchten. An jedem Talente-Sonntag gibt es von 9 bis 10 Uhr eine Einheit zum Monatsthema, zum Beispiel Pilates, Yoga, Meditation, Achtsamkeit, Atemübungen, Stressabbau oder einen kurzen Vortrag aus deinem Beruf.</p>
-                            <p>Themen mit medizinischem oder therapeutischem Bezug übernehmen Frauen mit passender Qualifikation.</p>
-                            <p><strong>Schenk uns eine Stunde deiner Zeit und sei dabei!</strong></p>
-                            <a href="kontakt.html?projekt=mamatanktauf" class="btn btn-accent">Ich möchte einen Sonntagvormittag mitgestalten</a>
-                            <p class="mitmach-card__extra"><strong>Für den Mama-Kompass suchen wir außerdem Fachberaterinnen</strong>, zum Beispiel Sozialpädagoginnen, systemische Beraterinnen, Familienberaterinnen oder Elternbegleiterinnen, gern selbst Mamas. Die Tätigkeit wird honoriert. Melde dich bei uns: <a href="mailto:vorstand@mainhattan-mamas.de">vorstand@mainhattan-mamas.de</a></p>
-                        </div>
-                    </div>
+                <div class="grid grid--2 offer-grid">
+                    <a href="minis_im_stadtteil.html" class="card card--bordered offer-card">
+                        <img src="illu_u3_minis.jpg" alt="" class="card-img">
+                        <h2 class="card-title">Minis im Stadtteil</h2>
+                        <p>Offenes Spiel für Kinder unter 3 Jahren – donnerstags in der Ev. Dornbuschgemeinde, ohne Anmeldung &amp; kostenlos.</p>
+                        <span class="offer-card__more">Mehr erfahren <i data-lucide="arrow-right"></i></span>
+                    </a>
+                    <a href="mama_tankt_auf.html" class="card card--bordered offer-card">
+                        <img src="illu_moments.jpg" alt="" class="card-img">
+                        <h2 class="card-title">Mama tankt auf</h2>
+                        <p>Zeit für dich. Raum zum Durchatmen. Ein präventives Gesundheits- und Entlastungsangebot für Mütter, ab Februar 2027.</p>
+                        <span class="offer-card__more">Mehr erfahren <i data-lucide="arrow-right"></i></span>
+                    </a>
+                    <a href="fuer_schwangere.html" class="card card--bordered offer-card">
+                        <img src="illu_hebammen_talk.jpg?v=3" alt="" class="card-img">
+                        <h2 class="card-title">Für Schwangere</h2>
+                        <p>Schwangeren-Treff mit Hebammen-Talk: gemütliche Runde &amp; alle Fragen zur Geburt im Gepäck.</p>
+                        <span class="offer-card__more">Mehr erfahren <i data-lucide="arrow-right"></i></span>
+                    </a>
+                    <a href="impuls_vortraege.html" class="card card--bordered offer-card">
+                        <img src="illu_krippe_tagesmutter.jpg" alt="" class="card-img">
+                        <h2 class="card-title">Impuls-Vorträge</h2>
+                        <p>Krippe oder Tagesmutter – was passt zu uns? Ein ehrlicher Blick hinter die Kulissen der U3-Betreuung.</p>
+                        <span class="offer-card__more">Mehr erfahren <i data-lucide="arrow-right"></i></span>
+                    </a>
                 </div>
             </div>
         </section>
-
-        <!-- Format 3: Schwangeren-Treff mit Hebammen-Talk -->
-        <section class="section section--surface">
-            <div class="container split-layout align-center">
-                <div class="split-image-container">
-                    <img src="illu_hebammen_talk.jpg?v=3" alt="Illustration: Schwangere sitzen mit einer Hebamme gemeinsam am Tisch" class="rounded-image" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                </div>
-                <div class="split-content">
-                    <h2 class="section-title">Schwangeren-Treff mit Hebammen-Talk</h2>
-                    <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">Gemütliche Runde & alle Fragen zur Geburt im Gepäck.</p>
-                    <p>Einen Hebammenplatz in Frankfurt zu finden, ist oft nicht leicht. Und bei regulären Vorsorgeterminen bleibt meist wenig Zeit für all die Gedanken und Fragen, die sich rund um Geburt und Wochenbett sammeln.</p>
-                    <p>Bei unserem Schwangeren-Treff machen wir es uns deshalb zweimal im Monat in offener Runde gemütlich: Du lernst andere werdende Mamas kennen und beim Hebammen-Talk ist eine erfahrene Hebamme exklusiv für eure Fragen da.</p>
-                    <ul class="feature-list">
-                        <li><i data-lucide="check-circle-2"></i> <strong>Deine Themen im Mittelpunkt:</strong> Ob Geburtsphasen, Klinikanmeldung, Vorbereitung aufs Wochenbett oder Schmerzmittel – frag alles.</li>
-                        <li><i data-lucide="check-circle-2"></i> <strong>Austausch, der entlastet:</strong> Du merkst sofort: Anderen werdenden Mamas gehen genau dieselben Gedanken durch den Kopf.</li>
-                        <li><i data-lucide="check-circle-2"></i> <strong>Gemeinsam kugeln:</strong> Unser Treffpunkt zweimal im Monat, um Kontakte zu vertiefen.</li>
-                    </ul>
-                    <ul class="detail-list">
-                        <li><i data-lucide="calendar"></i> <strong>Start:</strong> Ab Dezember 2026 / Januar 2027</li>
-                        <li><i data-lucide="clock"></i> <strong>Wann:</strong> Zweimal im Monat, voraussichtlich nachmittags – die Uhrzeit geben wir noch bekannt</li>
-                        <li><i data-lucide="map-pin"></i> <strong>Wo:</strong> Frankfurt am Main (Location wird noch bekannt gegeben)</li>
-                        <li><i data-lucide="check-circle-2"></i> <strong>Konditionen:</strong> Offener Treff – ohne Anmeldung &amp; kostenlos</li>
-                    </ul>
-                    <a href="#informieren" class="btn btn-primary" style="margin-top: 1rem;" data-interesse="Schwangerschaft & Geburtsvorbereitung">Gib mir Bescheid, wenn’s losgeht</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Format 4: Krippe oder Tagesmutter -->
-        <section class="section">
-            <div class="container split-layout align-center reverse-mobile">
-                <div class="split-content">
-                    <span class="status-badge planning"><i data-lucide="clock"></i> In Vorbereitung</span>
-                    <h2 class="section-title">Krippe oder Tagesmutter – was passt zu uns?</h2>
-                    <p style="font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">Ein ehrlicher Blick hinter die Kulissen der U3-Betreuung.</p>
-                    <p>Irgendwann ist sie da, diese erste große Frage: Krippe oder Tagesmutter? Und plötzlich hat jeder eine Meinung – aber was passt wirklich zu deinem Kind, eurem Alltag und eurem Bauchgefühl?</p>
-                    <p>Bei unserem Betreuungs-Kompass bekommst du keine allgemeine Broschüre vorgelesen, sondern einen offenen Blick hinter die Kulissen. Staatlich anerkannte Erzieherinnen mit Berufserfahrung in Krippe und Kindertagespflege teilen mit euch, worauf Eltern bei der Entscheidung und Besichtigung wirklich achten können.</p>
-                    <p>Wir sprechen ehrlich darüber, wie der Alltag in den verschiedenen Betreuungsformen aussieht, welche Fragen bei einer Besichtigung wichtig sind und was euch bei Eingewöhnung, Bezugspersonen, Schlafen und Krankheiten hilft. Der Kompass gibt dir das Insiderwissen und eine konkrete Checkliste an die Hand, damit du den Weg sicher angehen kannst.</p>
-                    <ul class="detail-list">
-                        <li><i data-lucide="users"></i> <strong>Für wen:</strong> Eltern, die einen U3-Betreuungsplatz suchen</li>
-                        <li><i data-lucide="file-text"></i> <strong>Das nimmst du mit:</strong> Praktische Checkliste für Besichtigungen und konkrete Fragen</li>
-                        <li><i data-lucide="calendar"></i> <strong>Wann & wo:</strong> In Vorbereitung – Infos zum ersten Termin folgen</li>
-                    </ul>
-                    <a href="#informieren" class="btn btn-primary" style="margin-top: 1rem;" data-interesse="Kleinkind & Betreuungs-Kompass">Infos zum ersten Termin erhalten</a>
-                </div>
-                <div class="split-image-container">
-                    <img src="illu_krippe_tagesmutter.jpg" alt="Illustration Krippe Tagesmutter" class="rounded-image" style="box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-                </div>
-            </div>
-        </section>
-
 
         <!-- Formular Section -->
         <section id="informieren" class="section section--border-top">

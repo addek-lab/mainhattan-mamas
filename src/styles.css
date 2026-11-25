@@ -1746,3 +1746,35 @@ body.nav-open { overflow: hidden; }
 
 /* ── PROJEKTE IN KURZFASSUNG ─────────────────────────────── */
 .project-tagline { font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; }
+
+/* ── ANGEBOTE ALS UNTERSEITEN ────────────────────────────── */
+.page-kicker { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 0.5rem; }
+.offer-grid { gap: 1.5rem; }
+.offer-card { display: flex; flex-direction: column; color: inherit; text-decoration: none; overflow: hidden; }
+.offer-card .card-img { height: 220px; }
+.offer-card p { font-size: 0.95rem; margin-bottom: 1rem; }
+.offer-card__more { margin-top: auto; display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 700; color: var(--color-accent); }
+.offer-card__more svg { width: 18px; height: 18px; transition: var(--transition); }
+.offer-card:hover .offer-card__more svg { transform: translateX(3px); }
+@media (max-width: 768px) { .offer-grid { grid-template-columns: minmax(0, 1fr); } .offer-card .card-img { height: 180px; } }
+
+/* Querverweis auf der Einrichtungsseite */
+.page-crosslink { max-width: 800px; margin: 1.5rem auto 0; font-size: 0.95rem; color: var(--color-text-muted); }
+.page-crosslink a { color: var(--color-accent); font-weight: 600; }
+
+/* ── MITGLIEDSBEITRAG ────────────────────────────────────── */
+.fee-panel { margin: 0 0 2.5rem; }
+.fee-panel__title { font-size: clamp(1.4rem, 2.5vw, 1.75rem); margin-bottom: 1rem; }
+.fee-panel__amount { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.25rem 0.75rem; margin-bottom: 1.5rem; }
+.fee-panel__num { font-family: var(--font-display); font-size: 2.75rem; font-weight: 600; line-height: 1; color: var(--color-accent); }
+.fee-steps { padding-left: 1.25rem; margin-bottom: 1.5rem; }
+.fee-steps li { margin-bottom: 0.5rem; }
+.fee-bank { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 0.4rem 1.25rem; padding: 1.25rem; background: var(--color-bg); border-radius: var(--radius-md); font-size: 0.95rem; }
+.fee-bank dt { font-weight: 700; }
+.fee-bank dd { margin: 0; }
+@media (max-width: 480px) {
+    .fee-bank { grid-template-columns: minmax(0, 1fr); gap: 0; }
+    .fee-bank dd { margin-bottom: 0.6rem; }
+}
+.offer-card picture { display: block; margin: -2rem -2rem 1.5rem; }
+.offer-card picture .card-img, .offer-card > .card-img { width: 100%; margin: 0; border-radius: 0; }

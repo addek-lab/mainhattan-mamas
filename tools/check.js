@@ -2,7 +2,7 @@
 // node check.js [basisURL]   (Standard: http://localhost:8787, live: https://mainhattan-mamas.de)
 const { chromium } = require('playwright-core');
 const base = process.argv[2] || 'http://localhost:8787';
-const pages = ['index', 'angebote_mamas', 'angebote_einrichtungen', 'mitmachen', 'vision', 'projekte', 'unterstuetzen', 'kontakt', 'impressum', 'datenschutz'];
+const pages = ['index', 'angebote_mamas', 'minis_im_stadtteil', 'mama_tankt_auf', 'fuer_schwangere', 'impuls_vortraege', 'mitglied_werden', 'angebote_einrichtungen', 'mitmachen', 'vision', 'projekte', 'unterstuetzen', 'kontakt', 'impressum', 'datenschutz'];
 (async () => {
   const b = await chromium.connectOverCDP('http://localhost:9333');
   const p = b.contexts()[0].pages()[0] || await b.contexts()[0].newPage();
