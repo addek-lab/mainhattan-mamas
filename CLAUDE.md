@@ -36,6 +36,7 @@ Der Ordner darüber (`../`) ist der alte Stand (Tag `stand-2026-10-09`): nicht m
 
 ## Regeln
 - Header/Menü/Footer nur in `partials/` ändern. Aktiver Menüpunkt kommt automatisch (`aria-current="page"`).
+- Menü-Änderungen: mobiles Menü mit aufgeklappten Unterpunkten bei 320, 360, 375 und 390 px prüfen (lange Einträge brechen auf echten Handys früher um).
 - Neues Icon: SVG aus `lucide-static` nach `icons/<name>.svg`, sonst bricht der Build ab.
 - Neue Bilder als JPG nach `src/`; WebP, Größe, Lazy Loading und feste Maße macht der Build.
 - Der Hero der Startseite (`startbild.jpg`, `.hero`) bleibt unverändert.
