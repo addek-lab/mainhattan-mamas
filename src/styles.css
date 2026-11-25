@@ -1743,3 +1743,6 @@ body.nav-open { overflow: hidden; }
     .theme-table th, .theme-table td { padding: 0.6rem 0.875rem; }
     .theme-table td:first-child { width: 7.25rem; }
 }
+
+/* ── PROJEKTE IN KURZFASSUNG ─────────────────────────────── */
+.project-tagline { font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; }
