@@ -24,6 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($input['email']) ? filter_var(trim($input["email"]), FILTER_SANITIZE_EMAIL) : '';
     $phone = isset($input['phone']) ? strip_tags(trim($input["phone"])) : '';
     $stadtteil = isset($input['stadtteil']) ? strip_tags(trim($input["stadtteil"])) : '';
+    $quelle = isset($input['quelle']) ? htmlspecialchars(strip_tags(trim($input["quelle"])), ENT_QUOTES, 'UTF-8') : '';
     $mama_gruppen = isset($input['mama_gruppen']) ? htmlspecialchars(strip_tags(trim($input["mama_gruppen"])), ENT_QUOTES, 'UTF-8') : '';
     $message = isset($input['message']) ? nl2br(strip_tags(trim($input["message"]))) : '';
     $form_type = isset($input['form_type']) ? strip_tags(trim($input["form_type"])) : 'allgemein';
@@ -126,6 +127,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class='field'>
                     <div class='label'>Stadtteil / Ort</div>
                     <div class='value'>$stadtteil</div>
+                </div>";
+    }
+
+    if (!empty($quelle)) {
+        $email_html .= "
+                <div class='field'>
+                    <div class='label'>Wie von uns erfahren</div>
+                    <div class='value'>$quelle</div>
                 </div>";
     }
 

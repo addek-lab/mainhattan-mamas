@@ -1799,3 +1799,6 @@ body.nav-open { overflow: hidden; }
     #nav-overlay .nav-link { font-size: 1.6rem; }
     #nav-overlay .nav-link--sub { font-size: 1.15rem; }
 }
+
+/* Hinweis unter einem Formularfeld */
+.form-hint { margin: 0.4rem 0 0; font-size: 0.85rem; line-height: 1.45; color: var(--color-text-muted); }
